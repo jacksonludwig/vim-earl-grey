@@ -13,24 +13,26 @@
 --  "Y8P"  "Y888888P'"Y88P"`Y8P' "YY8P8P88P     `Y8
 --
 
-local lush = require('lush')
+local lush = require "lush"
 local hsl = lush.hsl
 
 local palette = {
-  foreground = hsl("#605a52"),
-  background = hsl("#FCFBF9"),
-  background_alt = hsl("#f7f3ee"),
-  purple = hsl("#83577D"),
-  blue = hsl("#556995"),
-  teal = hsl("#477a7b"),
-  green = hsl("#747B4D"),
+  foreground = hsl "#605a52",
+  background = hsl "#FCFBF9",
+  background_alt = hsl "#f7f3ee",
+  purple = hsl "#83577D",
+  blue = hsl "#556995",
+  teal = hsl "#477a7b",
+  green = hsl "#747B4D",
+  red = hsl "#8F5652",
+  orange = hsl "#886A44",
 }
 
 ---@diagnostic disable: undefined-global
 local theme = lush(function()
- return {
+  return {
     Normal { bg = palette.background, fg = palette.foreground },
-    Comment { bg = palette.background, fg = palette.foreground.lighten(35),  gui="italic" },
+    Comment { bg = palette.background, fg = palette.foreground.lighten(35) },
     LineNr { bg = palette.background, fg = Comment.fg },
     Keyword { bg = palette.background, fg = palette.purple },
     Identifier { bg = palette.background, fg = palette.blue },
@@ -42,9 +44,12 @@ local theme = lush(function()
     Constant { bg = palette.background, fg = palette.teal },
     Conditional { bg = palette.background, fg = palette.purple },
     Repeat { bg = palette.background, fg = palette.purple },
+    Error { bg = palette.background, fg = palette.red },
+    ErrorMsg { bg = palette.background, fg = palette.red },
+    WarningMsg { bg = palette.background, fg = palette.orange },
 
     -- Clear all highlighting for CursorLine
-    CursorLine { },
+    CursorLine {},
   }
 end)
 
