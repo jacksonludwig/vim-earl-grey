@@ -76,6 +76,11 @@ local theme = lush(function()
     StatusLine { bg = pallete.background, fg = palette.foreground },
     StatusLineNC { bg = pallete.background, fg = palette.foreground },
 
+    SpellBad { bg = palette.background, gui = "underline", fg = palette.red },
+    SpellCap { bg = palette.background, gui = "underline", fg = palette.blue },
+    SpellRare { bg = palette.background, gui = "underline", fg = palette.orange },
+    SpellLocal { bg = palette.background, gui = "underline", fg = palette.purple },
+
     DiagnosticError { bg = palette.background, fg = palette.red },
     DiagnosticWarn { bg = palette.background, fg = palette.orange },
     DiagnosticHint { bg = palette.background, fg = palette.blue },
