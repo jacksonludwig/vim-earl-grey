@@ -47,9 +47,21 @@ local theme = lush(function()
     Error { bg = palette.background, fg = palette.red },
     ErrorMsg { bg = palette.background, fg = palette.red },
     WarningMsg { bg = palette.background, fg = palette.orange },
+    Type { bg = palette.background, fg = palette.foreground },
+    Function { bg = palette.background, fg = palette.foreground },
+    PreProc { bg = palette.background, fg = palette.orange },
+    Statement { bg = palette.background, fg = palette.purple },
+    NormalFloat { bg = palette.background_alt, fg = palette.foreground },
+    DiffDelete { bg = palette.background, fg = palette.red },
+    DiffAdd { bg = palette.background, fg = palette.green },
+    DiffChange { bg = palette.background, fg = palette.orange },
+    VertSplit { bg = palette.background, fg = palette.foreground },
+    Visual { bg = palette.background_alt, fg = palette.foreground.rotate(180) },
 
-    -- Clear all highlighting for CursorLine
-    CursorLine {},
+    CursorLine { bg = palette.background_alt, fg = palette.foreground.rotate(180) },
+    CursorLineNr { bg = palette.background_alt, fg = palette.foreground.rotate(180) },
+
+    Todo { bg = palette.background_alt, fg = palette.teal },
   }
 end)
 
