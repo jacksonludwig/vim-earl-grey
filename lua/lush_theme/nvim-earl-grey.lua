@@ -33,6 +33,7 @@ local theme = lush(function()
   return {
     Normal { bg = palette.background, fg = palette.foreground },
     Comment { bg = palette.background, fg = palette.foreground.lighten(35), gui = "italic" },
+    EndOfBuffer { bg = palette.background, fg = palette.foreground.lighten(35), gui = "italic" },
     LineNr { bg = palette.background, fg = Comment.fg },
     Keyword { bg = palette.background, fg = palette.purple },
     Identifier { bg = palette.background, fg = palette.blue },
