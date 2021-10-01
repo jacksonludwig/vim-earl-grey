@@ -62,6 +62,7 @@ local theme = lush(function()
     NonText { bg = palette.background, fg = palette.blue.lighten(15) },
     Title { bg = palette.background, fg = palette.teal, gui = "bold" },
     htmlH2 { bg = palette.background, fg = palette.blue, gui = "bold" },
+    NormalNB { bg = palette.background_alt, fg = palette.foreground },
 
     Cursor { bg = palette.foreground, fg = palette.background },
     MatchParen { bg = palette.background_alt.darken(15), fg = palette.foreground, gui = "underline" },
