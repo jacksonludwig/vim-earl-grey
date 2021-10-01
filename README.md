@@ -12,10 +12,15 @@ Using packer:
 
 ```lua
 use ({
-  "rktjmp/lush.nvim",
-  "jacksonludwig/vim-earl-grey"
+  "jacksonludwig/vim-earl-grey",
+  requires = { "rktjmp/lush.nvim" },
+  config = function()
+    vim.cmd("colorscheme nvim-earl-grey")
+  end
 })
 ```
+
+Or use any other package manager and set the colorscheme afterward with:
 
 ```vim
 colorscheme nvim-earl-grey
