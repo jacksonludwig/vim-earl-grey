@@ -6,7 +6,7 @@ Vim port of the [Earl Grey Theme](https://github.com/earl-grey-theme/earl-grey) 
 
 ## Install
 
-This **currently** requires [lush.nvim](https://github.com/rktjmp/lush.nvim).
+This **currently** requires [lush.nvim](https://github.com/rktjmp/lush.nvim), but will not when it's finished.
 
 Using packer:
 
@@ -17,6 +17,6 @@ use ({
 })
 ```
 
-```vimscript
+```vim
 colorscheme nvim-earl-grey
 ```
