@@ -60,13 +60,18 @@ local theme = lush(function()
     Search { bg = palette.purple, fg = palette.background },
     IncSearch { bg = palette.blue, fg = palette.background },
     NonText { bg = palette.background, fg = palette.blue.lighten(15) },
-    Title { bg = palette.background, fg = palette.teal },
+    Title { bg = palette.background, fg = palette.teal, gui = "bold" },
+    htmlH2 { bg = palette.background, fg = palette.blue, gui = "bold" },
 
     Cursor { bg = palette.foreground, fg = palette.background },
     MatchParen { bg = palette.background_alt.darken(15), fg = palette.foreground, gui = "underline" },
 
     CursorLine { bg = palette.background_alt, fg = palette.foreground.rotate(180) },
     CursorLineNr { bg = palette.background_alt, fg = palette.foreground.rotate(180) },
+
+    Bold { gui = "bold" },
+    Underlined { gui = "underline" },
+    Italic { gui = "italic" },
 
     Pmenu { bg = palette.background_alt, fg = palette.foreground },
     PmenuSel { bg = palette.background_alt.darken(15), fg = palette.foreground },
