@@ -13,35 +13,6 @@
 --  "Y8P"  "Y888888P'"Y88P"`Y8P' "YY8P8P88P     `Y8
 --
 
--- This is a starter colorscheme for use with Lush,
--- for usage guides, see :h lush or :LushRunTutorial
-
---
--- Note: Because this is lua file, vim will append your file to the runtime,
---       which means you can require(...) it in other lua code (this is useful),
---       but you should also take care not to conflict with other libraries.
---
---       (This is a lua quirk, as it has somewhat poor support for namespacing.)
---
---       Basically, name your file,
---
---       "super_theme/lua/lush_theme/super_theme_dark.lua",
---
---       not,
---
---       "super_theme/lua/dark.lua".
---
---       With that caveat out of the way...
---
-
--- Enable lush.ify on this file, run:
---
---  `:Lushify`
---
---  or
---
---  `:lua require('lush').ify()`
-
 local lush = require('lush')
 local hsl = lush.hsl
 
@@ -59,15 +30,18 @@ local palette = {
 local theme = lush(function()
  return {
     Normal { bg = palette.background, fg = palette.foreground },
-    Comment { bg = pallete.background, fg = palette.foreground.lighten(35),  gui="italic" },
-    LineNr { bg = pallete.background, fg = Comment.fg },
-    Keyword { bg = pallete.background, fg = palette.purple },
-    Identifier { bg = pallete.background, fg = palette.blue },
-    Operator { bg = pallete.background, fg = Normal.fg },
-    Delimiter { bg = pallete.background, fg = Identifier.fg },
-    Special { bg = pallete.background, fg = palette.purple },
-    Number { bg = pallete.background, fg = palette.teal },
-    String { bg = pallete.background, fg = palette.green },
+    Comment { bg = palette.background, fg = palette.foreground.lighten(35),  gui="italic" },
+    LineNr { bg = palette.background, fg = Comment.fg },
+    Keyword { bg = palette.background, fg = palette.purple },
+    Identifier { bg = palette.background, fg = palette.blue },
+    Operator { bg = palette.background, fg = Normal.fg },
+    Delimiter { bg = palette.background, fg = Identifier.fg },
+    Special { bg = palette.background, fg = palette.purple },
+    Number { bg = palette.background, fg = palette.teal },
+    String { bg = palette.background, fg = palette.green },
+    Constant { bg = palette.background, fg = palette.teal },
+    Conditional { bg = palette.background, fg = palette.purple },
+    Repeat { bg = palette.background, fg = palette.purple },
 
     -- Clear all highlighting for CursorLine
     CursorLine { },
