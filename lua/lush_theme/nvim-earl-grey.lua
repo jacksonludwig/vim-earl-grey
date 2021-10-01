@@ -60,8 +60,10 @@ local theme = lush(function()
     Search { bg = palette.purple, fg = palette.background },
     IncSearch { bg = palette.blue, fg = palette.background },
     NonText { bg = palette.background, fg = palette.blue.lighten(15) },
+    Title { bg = palette.background, fg = palette.teal },
 
-    Cursor = { bg = palette.foreground, fg = palette.background },
+    Cursor { bg = palette.foreground, fg = palette.background },
+    MatchParen { bg = palette.background_alt.darken(15), fg = palette.foreground, gui = "underline" },
 
     CursorLine { bg = palette.background_alt, fg = palette.foreground.rotate(180) },
     CursorLineNr { bg = palette.background_alt, fg = palette.foreground.rotate(180) },
@@ -74,14 +76,14 @@ local theme = lush(function()
     StatusLine { bg = pallete.background, fg = palette.foreground },
     StatusLineNC { bg = pallete.background, fg = palette.foreground },
 
-    DiagnosticError {  bg = palette.background, fg = palette.red },
-    DiagnosticWarn {  bg = palette.background, fg = palette.orange },
-    DiagnosticHint {  bg = palette.background, fg = palette.blue },
-    DiagnosticInfo {  bg = palette.background, fg = palette.purple },
-    DiagnosticUnderlineError {  bg = palette.background, fg = palette.red, gui = "underline" },
-    DiagnosticUnderlineWarn {  bg = palette.background, fg = palette.orange, gui = "underline" },
-    DiagnosticUnderlineHint {  bg = palette.background, fg = palette.blue, gui = "underline" },
-    DiagnosticUnderlineInfo {  bg = palette.background, fg = palette.purple, gui = "underline" },
+    DiagnosticError { bg = palette.background, fg = palette.red },
+    DiagnosticWarn { bg = palette.background, fg = palette.orange },
+    DiagnosticHint { bg = palette.background, fg = palette.blue },
+    DiagnosticInfo { bg = palette.background, fg = palette.purple },
+    DiagnosticUnderlineError { bg = palette.background, fg = palette.red, gui = "underline" },
+    DiagnosticUnderlineWarn { bg = palette.background, fg = palette.orange, gui = "underline" },
+    DiagnosticUnderlineHint { bg = palette.background, fg = palette.blue, gui = "underline" },
+    DiagnosticUnderlineInfo { bg = palette.background, fg = palette.purple, gui = "underline" },
   }
 end)
 
