@@ -73,8 +73,8 @@ local theme = lush(function()
 
     Todo { bg = palette.background_alt, fg = palette.teal },
 
-    StatusLine { bg = pallete.background, fg = palette.foreground },
-    StatusLineNC { bg = pallete.background, fg = palette.foreground },
+    StatusLine { bg = palette.background, fg = palette.foreground },
+    StatusLineNC { bg = palette.background, fg = palette.foreground },
 
     SpellBad { bg = palette.background, gui = "underline", fg = palette.red },
     SpellCap { bg = palette.background, gui = "underline", fg = palette.blue },
@@ -89,6 +89,10 @@ local theme = lush(function()
     DiagnosticUnderlineWarn { bg = palette.background, fg = palette.orange, gui = "underline" },
     DiagnosticUnderlineHint { bg = palette.background, fg = palette.blue, gui = "underline" },
     DiagnosticUnderlineInfo { bg = palette.background, fg = palette.purple, gui = "underline" },
+
+    LspReferenceText { bg = palette.background_alt },
+    LspReferenceRead { bg = palette.background_alt },
+    LspReferenceWrite { bg = palette.background_alt },
   }
 end)
 
