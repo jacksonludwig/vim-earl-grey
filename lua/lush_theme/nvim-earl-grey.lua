@@ -60,6 +60,7 @@ local theme = lush(function()
     Search { bg = palette.purple, fg = palette.background },
     IncSearch { bg = palette.blue, fg = palette.background },
     NonText { bg = palette.background, fg = palette.blue.lighten(15) },
+    SpecialKey { bg = palette.background, fg = palette.blue.lighten(15) },
     Title { bg = palette.background, fg = palette.teal, gui = "bold" },
     htmlH2 { bg = palette.background, fg = palette.blue, gui = "bold" },
     NormalNB { bg = palette.background_alt, fg = palette.foreground },
