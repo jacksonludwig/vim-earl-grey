@@ -56,7 +56,7 @@ local theme = lush(function()
     DiffAdd { bg = palette.background, fg = palette.green },
     DiffChange { bg = palette.background, fg = palette.orange },
     VertSplit { bg = palette.background, fg = palette.foreground },
-    Visual { bg = palette.background_alt },
+    Visual { bg = palette.background_alt.darken(5) },
     Search { bg = palette.purple, fg = palette.background },
     IncSearch { bg = palette.blue, fg = palette.background },
     NonText { bg = palette.background, fg = palette.blue.lighten(15) },
