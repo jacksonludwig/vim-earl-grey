@@ -32,7 +32,7 @@ local palette = {
 local theme = lush(function()
   return {
     Normal { bg = palette.background, fg = palette.foreground },
-    Comment { bg = palette.background, fg = palette.foreground.lighten(35) },
+    Comment { bg = palette.background, fg = palette.foreground.lighten(35), gui = "italic" },
     LineNr { bg = palette.background, fg = Comment.fg },
     Keyword { bg = palette.background, fg = palette.purple },
     Identifier { bg = palette.background, fg = palette.blue },
@@ -57,9 +57,16 @@ local theme = lush(function()
     DiffChange { bg = palette.background, fg = palette.orange },
     VertSplit { bg = palette.background, fg = palette.foreground },
     Visual { bg = palette.background_alt, fg = palette.foreground.rotate(180) },
+    Search { bg = palette.purple, fg = palette.background },
+    IncSearch { bg = palette.blue, fg = palette.background },
+
+    Cursor = { bg = palette.foreground, fg = palette.background },
 
     CursorLine { bg = palette.background_alt, fg = palette.foreground.rotate(180) },
     CursorLineNr { bg = palette.background_alt, fg = palette.foreground.rotate(180) },
+
+    Pmenu { bg = palette.background_alt, fg = palette.foreground },
+    PmenuSel { bg = palette.background_alt.darken(15), fg = palette.foreground },
 
     Todo { bg = palette.background_alt, fg = palette.teal },
   }
