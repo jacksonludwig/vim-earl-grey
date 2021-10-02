@@ -62,6 +62,7 @@ local theme = lush(function()
     IncSearch { bg = palette.blue, fg = palette.background },
     NonText { fg = palette.blue.lighten(15) },
     SpecialKey { fg = NonText.fg },
+    Directory { fg = palette.teal },
 
     Title { fg = palette.teal, gui = "bold" },
     htmlH2 { fg = palette.blue, gui = "bold" },
@@ -70,8 +71,9 @@ local theme = lush(function()
     Cursor { bg = palette.foreground, fg = palette.background },
     MatchParen { bg = palette.background_alt.darken(15), fg = palette.foreground, gui = "underline" },
 
-    CursorLine { bg = palette.background_alt, fg = palette.foreground.rotate(180) },
-    CursorLineNr { bg = palette.background_alt, fg = palette.foreground.rotate(180) },
+    CursorLine { bg = palette.background_alt },
+    ColorColumn { bg = palette.background_alt },
+    CursorLineNr { bg = palette.background_alt },
 
     Bold { gui = "bold" },
     Underlined { gui = "underline" },
