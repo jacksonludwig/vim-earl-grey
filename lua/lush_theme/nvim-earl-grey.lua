@@ -33,7 +33,7 @@ local theme = lush(function()
   return {
     Normal { bg = palette.background, fg = palette.foreground },
     Comment { bg = palette.background, fg = palette.foreground.lighten(35) },
-    EndOfBuffer { bg = palette.background, fg = palette.foreground.lighten(35) },
+    EndOfBuffer { bg = palette.background, fg = Comment.fg },
     LineNr { bg = palette.background, fg = Comment.fg },
     Keyword { bg = palette.background, fg = palette.purple },
     Identifier { bg = palette.background, fg = palette.blue },
@@ -61,7 +61,7 @@ local theme = lush(function()
     Search { bg = palette.purple, fg = palette.background },
     IncSearch { bg = palette.blue, fg = palette.background },
     NonText { bg = palette.background, fg = palette.blue.lighten(15) },
-    SpecialKey { bg = palette.background, fg = palette.blue.lighten(15) },
+    SpecialKey { bg = palette.background, fg = NonText.fg },
 
     Title { bg = palette.background, fg = palette.teal, gui = "bold" },
     htmlH2 { bg = palette.background, fg = palette.blue, gui = "bold" },
