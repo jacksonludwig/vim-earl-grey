@@ -1,4 +1,4 @@
-## Currently in development
+## Currently a *WIP*
 
 ## Vim Earl Grey Theme
 
@@ -25,3 +25,8 @@ Or use any other package manager and set the colorscheme afterward with:
 ```vim
 colorscheme nvim-earl-grey
 ```
+
+## Plugin/Extension Support
+
+- Neovim built-in LSP
+- Neovim Treesitter (In progress)
