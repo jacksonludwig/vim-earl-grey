@@ -32,10 +32,10 @@ local palette = {
 local theme = lush(function()
   return {
     Normal { bg = palette.background, fg = palette.foreground },
-    Comment { bg = palette.background, fg = palette.foreground.lighten(35) },
-    EndOfBuffer { bg = palette.background, fg = Comment.fg },
-    LineNr { bg = palette.background, fg = Comment.fg },
-    Keyword { bg = palette.background, fg = palette.purple },
+    Comment { fg = palette.foreground.lighten(35) },
+    EndOfBuffer { fg = Comment.fg },
+    LineNr { fg = Comment.fg },
+    Keyword { fg = palette.purple },
     Identifier { fg = palette.blue },
     Operator { fg = Normal.fg },
     Delimiter { fg = Identifier.fg },
@@ -82,8 +82,8 @@ local theme = lush(function()
 
     Todo { bg = palette.background_alt.darken(3), fg = palette.teal },
 
-    StatusLine { bg = palette.background, fg = palette.foreground },
-    StatusLineNC { bg = palette.background, fg = palette.foreground },
+    StatusLine { fg = palette.foreground },
+    StatusLineNC { fg = palette.foreground },
 
     SpellBad { gui = "underline", fg = palette.red },
     SpellCap { gui = "underline", fg = palette.blue },
