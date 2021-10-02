@@ -66,10 +66,10 @@ local theme = lush(function()
 
     Title { fg = palette.teal, gui = "bold" },
     htmlH2 { fg = palette.blue, gui = "bold" },
-    NormalNB { bg = palette.background_alt, fg = palette.foreground },
+    NormalNB { bg = palette.background_alt },
 
     Cursor { bg = palette.foreground, fg = palette.background },
-    MatchParen { bg = palette.background_alt.darken(15), fg = palette.foreground, gui = "underline" },
+    MatchParen { bg = Visual.bg, gui = "underline" },
 
     CursorLine { bg = palette.background_alt },
     ColorColumn { bg = palette.background_alt },
@@ -79,13 +79,10 @@ local theme = lush(function()
     Underlined { gui = "underline" },
     Italic { gui = "italic" },
 
-    Pmenu { bg = palette.background_alt, fg = palette.foreground },
-    PmenuSel { bg = palette.background_alt.darken(15), fg = palette.foreground },
+    Pmenu { bg = palette.background_alt },
+    PmenuSel { bg = palette.background_alt.darken(15) },
 
     Todo { bg = palette.background_alt.darken(3), fg = palette.teal },
-
-    StatusLine { fg = palette.foreground },
-    StatusLineNC { fg = palette.foreground },
 
     SpellBad { gui = "underline", fg = palette.red },
     SpellCap { gui = "underline", fg = palette.blue },
