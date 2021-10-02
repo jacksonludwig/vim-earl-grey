@@ -52,12 +52,12 @@ local theme = lush(function()
     Function { fg = palette.foreground },
     PreProc { fg = palette.orange },
     Statement { fg = palette.purple },
-    NormalFloat { bg = palette.background_alt, fg = palette.foreground },
+    NormalFloat { bg = palette.background_alt.darken(3), fg = palette.foreground },
     DiffDelete { fg = palette.red },
     DiffAdd { fg = palette.green },
     DiffChange { fg = palette.orange },
     VertSplit { fg = palette.foreground },
-    Visual { bg = palette.background_alt.darken(5) },
+    Visual { bg = palette.blue.lighten(70) },
     Search { bg = palette.purple, fg = palette.background },
     IncSearch { bg = palette.blue, fg = palette.background },
     NonText { fg = palette.blue.lighten(15) },
@@ -80,7 +80,7 @@ local theme = lush(function()
     Pmenu { bg = palette.background_alt, fg = palette.foreground },
     PmenuSel { bg = palette.background_alt.darken(15), fg = palette.foreground },
 
-    Todo { bg = palette.background_alt, fg = palette.teal },
+    Todo { bg = palette.background_alt.darken(3), fg = palette.teal },
 
     StatusLine { bg = palette.background, fg = palette.foreground },
     StatusLineNC { bg = palette.background, fg = palette.foreground },
