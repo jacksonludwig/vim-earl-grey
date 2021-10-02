@@ -73,6 +73,7 @@ local theme = lush(function()
 
     CursorLine { bg = palette.background_alt },
     ColorColumn { bg = palette.background_alt },
+    SignColumn { bg = palette.bg },
     CursorLineNr { bg = palette.background_alt },
 
     Bold { gui = "bold" },
