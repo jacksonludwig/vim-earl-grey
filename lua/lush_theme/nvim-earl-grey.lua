@@ -17,12 +17,12 @@ local lush = require "lush"
 local hsl = lush.hsl
 
 local palette = {
-  foreground = hsl "#605a52",
+  foreground = hsl "#605A52",
   background = hsl "#FCFBF9",
-  background_alt = hsl "#f7f3ee",
+  background_alt = hsl "#F7F3EE",
   purple = hsl "#83577D",
   blue = hsl "#556995",
-  teal = hsl "#477a7b",
+  teal = hsl "#477A7B",
   green = hsl "#747B4D",
   red = hsl "#8F5652",
   orange = hsl "#886A44",
