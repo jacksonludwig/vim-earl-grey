@@ -2,8 +2,6 @@
 
 Vim port of the [Earl Grey Theme](https://github.com/earl-grey-theme/earl-grey) using [lush.nvim](https://github.com/rktjmp/lush.nvim).
 
-I am still adding and adjusting highlights with this theme.
-
 ## Screenshots
 
 ![image](https://user-images.githubusercontent.com/42984254/135736397-3f8dfadd-ea79-4168-8091-ecb68d58f741.png)
